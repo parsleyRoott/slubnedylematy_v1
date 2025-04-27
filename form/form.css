@@ -1,0 +1,422 @@
+/* Dodatkowe style dla formularza, aby dopasować go do głównego stylu strony */
+
+/* Dostosowanie nagłówka i hero sekcji */
+.form-section {
+    background-color: var(--color-lighter);
+    padding: 120px 0 80px; /* Dodatkowy padding na górze, aby uwzględnić stały nagłówek */
+    margin-top: 80px; /* Tak samo jak w głównym stylu, aby uwzględnić stały header */
+}
+
+/* Poprawki dla formularza wg stylu głównej strony */
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--color-white);
+    padding: 40px;
+    border-radius: 20px; /* Zwiększono zaokrąglenie rogów */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Wzmocniony cień dla lepszego efektu głębi */
+}
+
+.form-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-intro .section-title {
+    color: var(--color-dark);
+    position: relative;
+    padding-bottom: 15px;
+    font-size: 2.2rem; /* Zwiększona czcionka nagłówka */
+}
+
+.form-intro .section-title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background-color: var(--color-primary);
+}
+
+/* Style dla formularza - ogólne udoskonalenia */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.form-group {
+    flex: 1;
+    margin: 0 10px 25px;
+    min-width: 250px; /* Zapewnia odpowiednią szerokość na urządzeniach mobilnych */
+}
+
+/* Style dla etykiet */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--color-dark);
+    font-size: 1rem;
+}
+
+/* Style dla pól formularza */
+.form-control {
+    width: 100%;
+    padding: 15px 20px; /* Zwiększone wypełnienie dla lepszej interakcji na mobilnych */
+    border: 2px solid var(--color-neutral);
+    border-radius: 30px; /* Okrągłe pola formularza */
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.form-control:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 10px rgba(204, 175, 135, 0.4);
+    outline: none; /* Usunięcie domyślnego obramowania przy fokusie */
+}
+
+/* Stylowy efekt przy błędzie walidacji */
+.form-control.error {
+    border-color: #e74c3c;
+    box-shadow: 0 0 10px rgba(231, 76, 60, 0.3);
+}
+
+/* Style dla textarea */
+textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Ulepszony wygląd checkboxów */
+.form-check {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-check input[type="checkbox"] {
+    transform: scale(1.5); /* Większy checkbox */
+    margin-right: 15px;
+    margin-top: 5px;
+    accent-color: var(--color-primary);
+}
+
+.form-check label {
+    flex: 1;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Opcje dekoracji - nowy układ */
+.decoration-options {
+    margin-bottom: 25px;
+}
+
+.decoration-options-title {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: var(--color-dark);
+    font-size: 1rem;
+}
+
+.decoration-options-title.error {
+    color: #e74c3c;
+}
+
+.decoration-options-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    background-color: var(--color-lighter);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.decoration-option {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 12px 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+}
+
+.decoration-option:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.decoration-option input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 15px;
+    accent-color: var(--color-primary);
+}
+
+.decoration-option label {
+    cursor: pointer;
+    font-weight: 400;
+}
+
+/* Style dla przycisku submit */
+.form-submit {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.form-submit .btn {
+    padding: 15px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    min-width: 200px;
+    transition: all 0.4s ease;
+}
+
+.form-submit .btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(204, 175, 135, 0.3);
+}
+
+/* Animacja przy pomyślnym wysłaniu */
+.btn-submit-success {
+    background-color: #2ecc71 !important;
+}
+
+/* Dodatkowe informacje */
+.form-notes {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* Poprawka dla responsywności */
+@media (max-width: 768px) {
+    .form-section {
+        padding-top: 100px;
+    }
+
+    .form-container {
+        padding: 30px 25px;
+        margin: 0 15px;
+    }
+
+    .form-intro .section-title {
+        font-size: 1.8rem;
+    }
+
+    .form-row {
+        display: block;
+        margin: 0;
+    }
+
+    .form-group {
+        margin: 0 0 20px;
+    }
+
+    .decoration-options-container {
+        grid-template-columns: 1fr;
+    }
+
+    .form-submit .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-section {
+        padding-top: 80px;
+    }
+
+    .form-container {
+        padding: 25px 20px;
+    }
+
+    .form-intro .section-title {
+        font-size: 1.6rem;
+    }
+}
+
+/* Style dla modalu polityki prywatności */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    opacity: 1;
+    display: block;
+}
+
+.modal-content {
+    position: relative;
+    background-color: var(--color-white);
+    margin: 5% auto;
+    max-width: 800px;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: modalSlideDown 0.4s ease;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes modalSlideDown {
+    from {transform: translateY(-50px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+.modal-header {
+    padding: 25px 30px 20px;
+    border-bottom: 2px solid var(--color-lighter);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    background-color: var(--color-lighter);
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: var(--color-dark);
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.close-button {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--color-dark);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close-button:hover {
+    color: var(--color-primary);
+}
+
+.modal-body {
+    padding: 30px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.privacy-content h3 {
+    color: var(--color-secondary);
+    font-family: var(--font-primary);
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.privacy-content h3:first-child {
+    margin-top: 0;
+}
+
+.privacy-content p, .privacy-content li {
+    font-family: var(--font-secondary);
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.privacy-content ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.privacy-content li {
+    margin-bottom: 8px;
+}
+
+.modal-footer {
+    padding: 20px 30px;
+    text-align: center;
+    border-top: 2px solid var(--color-lighter);
+    border-radius: 0 0 20px 20px;
+    background-color: var(--color-lighter);
+}
+
+.accept-btn {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.accept-btn:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(164, 141, 109, 0.3);
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .modal-content {
+        margin: 10% auto;
+        width: 95%;
+    }
+
+    .modal-header {
+        padding: 20px;
+    }
+
+    .modal-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .modal-body {
+        padding: 20px;
+    }
+
+    .privacy-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .modal-footer {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-content {
+        margin: 5% auto;
+        width: 95%;
+    }
+
+    .modal-header {
+        padding: 15px;
+    }
+
+    .modal-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .close-button {
+        font-size: 24px;
+    }
+}

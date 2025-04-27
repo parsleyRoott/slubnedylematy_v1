@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ślubne Dylematy | Formularz kontaktowy</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="form/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Ślubne Dylematy Logo" class="logo-image">
+            <div class="logo-text">
+                <h1>Ślubne Dylematy</h1>
+                <p class="tagline">Dekoracje ślubne, które opowiadają historię</p>
+            </div>
+        </div>
+        <nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Strona główna</a></li>
+                <li><a href="index.html#oferta">Oferta</a></li>
+                <li><a href="index.html#galeria">Galeria</a></li>
+                <li><a href="index.html#o-nas">O nas</a></li>
+                <li><a href="index.html#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="form-section">
+    <div class="container">
+        <div class="form-container">
+            <div class="form-intro">
+                <h2 class="section-title">Opowiedz nam o swoim wymarzonym dniu</h2>
+                <p>Każda historia miłości jest wyjątkowa i zasługuje na równie wyjątkowe dekoracje. Wypełnij poniższy formularz, a pomożemy Ci stworzyć wymarzoną oprawę Twojego ślubu i wesela.</p>
+                <p>Rozpocznijmy wspólnie tę piękną podróż!</p>
+            </div>
+
+<!--            <form id="contactForm" action="/send" method="POST">-->
+<!--                <div class="form-row">-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="firstName">Imię*</label>-->
+<!--                        <input type="text" class="form-control" id="firstName" name="firstName" required>-->
+<!--                    </div>-->
+
+<!--                    <div class="form-group">-->
+<!--                        <label for="lastName">Nazwisko*</label>-->
+<!--                        <input type="text" class="form-control" id="lastName" name="lastName" required>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="form-row">-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="email">Adres e-mail*</label>-->
+<!--                        <input type="email" class="form-control" id="email" name="email" required>-->
+<!--                    </div>-->
+
+<!--                    <div class="form-group">-->
+<!--                        <label for="phone">Numer telefonu*</label>-->
+<!--                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="np. 123-456-789" required>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="form-row">-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="guestCount">Planowana liczba gości*</label>-->
+<!--                        <input type="number" class="form-control" id="guestCount" name="guestCount" min="1" required>-->
+<!--                    </div>-->
+
+<!--                    <div class="form-group">-->
+<!--                        <label for="colorScheme">Preferowana kolorystyka</label>-->
+<!--                        <input type="text" class="form-control" id="colorScheme" name="colorScheme" placeholder="np. pastelowe beże, róż, zieleń...">-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="form-group">-->
+<!--                    <label for="venueInfo">Nazwa restauracji / miejscowość / województwo*</label>-->
+<!--                    <input type="text" class="form-control" id="venueInfo" name="venueInfo" required>-->
+<!--                </div>-->
+
+<!--                <div class="decoration-options">-->
+<!--                    <span class="decoration-options-title">Zakres dekoracji (wybierz odpowiednie)*</span>-->
+<!--                    <div class="decoration-options-container">-->
+<!--                        <div class="decoration-option">-->
+<!--                            <input type="checkbox" id="decoration-church" name="decorationScope[]" value="kościół">-->
+<!--                            <label for="decoration-church">Kościół</label>-->
+<!--                        </div>-->
+<!--                        <div class="decoration-option">-->
+<!--                            <input type="checkbox" id="decoration-venue" name="decorationScope[]" value="sala weselna">-->
+<!--                            <label for="decoration-venue">Sala weselna</label>-->
+<!--                        </div>-->
+<!--                        <div class="decoration-option">-->
+<!--                            <input type="checkbox" id="decoration-outdoor" name="decorationScope[]" value="ślub plenerowy">-->
+<!--                            <label for="decoration-outdoor">Ślub plenerowy</label>-->
+<!--                        </div>-->
+<!--                        <div class="decoration-option">-->
+<!--                            <input type="checkbox" id="decoration-table" name="decorationScope[]" value="dekoracje stołów">-->
+<!--                            <label for="decoration-table">Dekoracje stołów</label>-->
+<!--                        </div>-->
+<!--                        <div class="decoration-option">-->
+<!--                            <input type="checkbox" id="decoration-car" name="decorationScope[]" value="dekoracja samochodu">-->
+<!--                            <label for="decoration-car">Dekoracja samochodu</label>-->
+<!--                        </div>-->
+<!--                        <div class="decoration-option">-->
+<!--                            <input type="checkbox" id="decoration-bouquet" name="decorationScope[]" value="bukiet ślubny">-->
+<!--                            <label for="decoration-bouquet">Bukiet ślubny</label>-->
+<!--                        </div>-->
+<!--                        <div class="decoration-option">-->
+<!--                            <input type="checkbox" id="decoration-other" name="decorationScope[]" value="inne">-->
+<!--                            <label for="decoration-other">Inne (opisz w polu poniżej)</label>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="form-group">-->
+<!--                    <label for="message">Parę słów o Was i o Waszych planach</label>-->
+<!--                    <textarea class="form-control" id="message" name="message" placeholder="Opowiedz nam o swojej wizji, ulubionych kwiatach, stylu wesela czy innych ważnych dla Was elementach..."></textarea>-->
+<!--                </div>-->
+
+<!--                <div class="form-check">-->
+<!--                    <input type="checkbox" id="gdprConsent" name="gdprConsent" required>-->
+<!--                    <label for="gdprConsent">Wyrażam zgodę na przetwarzanie powyżej zamieszczonych danych osobowych w celu przedstawienia oferty na wykonanie usług dekoracyjnych. (<a href="polityka-prywatnosci.html">Polityka prywatności</a>)*</label>-->
+<!--                </div>-->
+
+<!--                <div class="form-submit">-->
+<!--                    <button type="submit" class="btn">Wyślij zapytanie</button>-->
+<!--                </div>-->
+
+<!--                <div class="form-notes">-->
+<!--                    <p>* Pola oznaczone gwiazdką są wymagane.</p>-->
+<!--                    <p>Odpowiemy na Twoje zapytanie w ciągu 48 godzin.</p>-->
+<!--                </div>-->
+<!--            </form>-->
+
+            <form id="contactForm" action="https://formsubmit.co/pietracha10@wp.pl" method="POST">
+
+                <!-- UKRYTE USTAWIENIA -->
+                <input type="hidden" name="_captcha" value="false">
+<!--                <input type="hidden" name="_next" value="https://twojastrona.pl/dziekujemy.html">-->
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">Imię*</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Nazwisko*</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Adres e-mail*</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Numer telefonu*</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="np. 123-456-789" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="guestCount">Planowana liczba gości*</label>
+                        <input type="number" class="form-control" id="guestCount" name="guestCount" min="1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="colorScheme">Preferowana kolorystyka</label>
+                        <input type="text" class="form-control" id="colorScheme" name="colorScheme" placeholder="np. beże, róż, biel...">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="venueInfo">Nazwa restauracji / miejscowość / województwo*</label>
+                    <input type="text" class="form-control" id="venueInfo" name="venueInfo" required>
+                </div>
+
+                <div class="decoration-options">
+                    <span class="decoration-options-title">Zakres dekoracji (wybierz odpowiednie)*</span>
+                    <div class="decoration-options-container">
+                        <div class="decoration-option">
+                            <input type="checkbox" id="decoration-church" name="decorationScope[]" value="kościół">
+                            <label for="decoration-church">Kościół</label>
+                        </div>
+                        <div class="decoration-option">
+                            <input type="checkbox" id="decoration-venue" name="decorationScope[]" value="sala weselna">
+                            <label for="decoration-venue">Sala weselna</label>
+                        </div>
+                        <div class="decoration-option">
+                            <input type="checkbox" id="decoration-outdoor" name="decorationScope[]" value="ślub plenerowy">
+                            <label for="decoration-outdoor">Ślub plenerowy</label>
+                        </div>
+                        <div class="decoration-option">
+                            <input type="checkbox" id="decoration-table" name="decorationScope[]" value="dekoracje stołów">
+                            <label for="decoration-table">Dekoracje stołów</label>
+                        </div>
+<!--                        <div class="decoration-option">-->
+<!--                            <input type="checkbox" id="decoration-car" name="decorationScope[]" value="dekoracja samochodu">-->
+<!--                            <label for="decoration-car">Dekoracja samochodu</label>-->
+<!--                        </div>-->
+                        <div class="decoration-option">
+                            <input type="checkbox" id="decoration-bouquet" name="decorationScope[]" value="bukiet ślubny">
+                            <label for="decoration-bouquet">Bukiet ślubny</label>
+                        </div>
+                        <div class="decoration-option">
+                            <input type="checkbox" id="decoration-other" name="decorationScope[]" value="inne">
+                            <label for="decoration-other">Inne (opisz w polu poniżej)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Parę słów o Was i o Waszych planach</label>
+                    <textarea class="form-control" id="message" name="message" placeholder="Opowiedz nam o swojej wizji, ulubionych kwiatach, stylu wesela czy innych ważnych dla Was elementach..."></textarea>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" id="gdprConsent" name="gdprConsent" required>
+                    <label for="gdprConsent">
+                        Wyrażam zgodę na przetwarzanie powyżej zamieszczonych danych osobowych w celu przedstawienia oferty na wykonanie usług dekoracyjnych. (<a href="polityka-prywatnosci.html">Polityka prywatności</a>)*</label>
+                </div>
+
+                <!-- HTML dla modalu polityki prywatności -->
+                <div id="privacyModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Polityka Prywatności</h2>
+                            <span class="close-button">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="privacy-content">
+                                <h3>Informacje o administratorze danych</h3>
+                                <p>Administratorem Twoich danych osobowych jest Ślubne Dylematy.</p>
+
+                                <h3>Zakres zbieranych danych</h3>
+                                <p>Poprzez formularz kontaktowy zbieramy następujące dane:</p>
+                                <ul>
+                                    <li>Imię i nazwisko</li>
+                                    <li>Adres e-mail</li>
+                                    <li>Numer telefonu</li>
+                                    <li>Informacje o planowanym wydarzeniu</li>
+                                </ul>
+
+                                <h3>Cel przetwarzania danych</h3>
+                                <p>Dane osobowe przetwarzane są w celu:</p>
+                                <ul>
+                                    <li>Przedstawienia spersonalizowanej oferty usług dekoracyjnych</li>
+                                    <li>Kontaktu w sprawie realizacji zamówienia</li>
+                                    <li>Realizacji usługi dekoracji ślubnej</li>
+                                </ul>
+
+                                <h3>Okres przechowywania danych</h3>
+                                <p>Dane przechowywane są przez okres niezbędny do realizacji usługi oraz do czasu przedawnienia roszczeń wynikających z przepisów prawa.</p>
+
+                                <h3>Twoje prawa</h3>
+                                <p>Masz prawo do:</p>
+                                <ul>
+                                    <li>Dostępu do swoich danych</li>
+                                    <li>Sprostowania danych</li>
+                                    <li>Usunięcia danych</li>
+                                    <li>Ograniczenia przetwarzania</li>
+                                    <li>Przenoszenia danych</li>
+                                    <li>Wniesienia sprzeciwu</li>
+                                    <li>Cofnięcia zgody w dowolnym momencie</li>
+                                </ul>
+
+                                <h3>Kontakt w sprawie danych osobowych</h3>
+                                <p>W sprawach związanych z ochroną danych osobowych możesz skontaktować się z nami poprzez e-mail: [email tu bedzie] lub telefonicznie: [numer telefonu].</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn accept-btn">Akceptuję</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-submit">
+                    <button type="submit" class="btn">Wyślij zapytanie</button>
+                </div>
+
+                <div class="form-notes">
+                    <p>* Pola oznaczone gwiazdką są wymagane.</p>
+                    <p>Odpowiemy na Twoje zapytanie w ciągu 48 godzin.</p>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Ślubne Dylematy</h3>
+                <p>Dekoracje ślubne</p>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="index.html#home">Strona główna</a></li>
+                    <li><a href="index.html#oferta">Oferta</a></li>
+                    <li><a href="index.html#galeria">Galeria</a></li>
+                    <li><a href="index.html#o-nas">O nas</a></li>
+                    <li><a href="index.html#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/profile.php?id=100076236873547" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/slubne.dylematy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ślubne Dylematy. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="/script.js"></script>
+<script src="form/form.js"></script>
+<script src="form/politicy.js"></script>
+
+</body>
+</html>
